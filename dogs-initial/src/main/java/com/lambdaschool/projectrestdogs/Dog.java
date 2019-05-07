@@ -1,4 +1,4 @@
-package main.java.com.lambdaschool.projectrestdogs.model;
+package com.lambdaschool.projectrestdogs;
 
 import java.util.concurrent.atomic.AtomicLong;
 
