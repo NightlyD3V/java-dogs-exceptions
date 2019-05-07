@@ -1,4 +1,4 @@
-package com.lambdaschool.projectrestdogs;
+package main.java.com.lambdaschool.projectrestdogs.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ public class DogController
     @GetMapping(value = "/dogs")
     public ResponseEntity<?> getAllDogs()
     {
-        return new ResponseEntity<>(ProjectrestdogsApplication.ourDogList.dogList, HttpStatus.OK);
+        return new ResponseEntity<>(com.lambdaschool.projectrestdogs.ProjectrestdogsApplication.ourDogList.dogList, HttpStatus.OK);
     }
 
     // localhost:8080/dogs/{id}
