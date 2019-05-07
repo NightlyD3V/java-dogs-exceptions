@@ -1,5 +1,4 @@
-package main.java.com.lambdaschool.projectrestdogs.model;
-
+package com.lambdaschool.projectrestdogs.model;
 
 import com.lambdaschool.projectrestdogs.exception.ValidationError;
 

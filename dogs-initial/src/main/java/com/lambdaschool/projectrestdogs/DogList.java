@@ -1,5 +1,7 @@
 package com.lambdaschool.projectrestdogs;
 
+import com.lambdaschool.projectrestdogs.model.Dog;
+
 import java.util.ArrayList;
 
 public class DogList
