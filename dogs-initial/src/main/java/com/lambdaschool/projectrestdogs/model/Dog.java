@@ -1,5 +1,9 @@
 package com.lambdaschool.projectrestdogs.model;
 
+import org.apache.logging.log4j.spi.LoggerContextFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Dog
@@ -9,6 +13,7 @@ public class Dog
     private String breed;
     private int weight;
     private boolean apartmentSuitable;
+    private static final Logger logger = LoggerFactory.getLogger(Dog.class);
 
     public Dog(String breed, int weight, boolean apartmentSuitable)
     {
@@ -24,6 +29,8 @@ public class Dog
         this.breed = toClone.getBreed();
         this.weight = toClone.weight;
         this.apartmentSuitable = toClone.isApartmentSuitable();
+        logger.info("We created a new Dog");
+        logger.debug("Created a new Dog with the id " + this.id);
     }
 
     public long getId()
