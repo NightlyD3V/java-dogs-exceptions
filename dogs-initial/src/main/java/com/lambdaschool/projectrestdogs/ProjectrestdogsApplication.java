@@ -47,7 +47,7 @@ public class ProjectrestdogsApplication
     @Bean
     public Binding declareBindingHigh() {
 
-        return BindingBuilder.bind(appQueLow()).to(appExchange()).with(PRIORITY_QUE_HIGH);
+        return BindingBuilder.bind(appQueHigh()).to(appExchange()).with(PRIORITY_QUE_HIGH);
 
     }
 

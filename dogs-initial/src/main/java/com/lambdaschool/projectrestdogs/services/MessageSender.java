@@ -6,7 +6,6 @@ import com.lambdaschool.projectrestdogs.model.MessageDetail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -14,14 +13,8 @@ import java.util.Random;
 @Service
 public class MessageSender
 {
-    @Autowired
     private static RabbitTemplate rt;
     private static final Logger logger = LoggerFactory.getLogger(MessageSender.class);
-
-    public MessageSender()
-    {
-
-    }
 
     public MessageSender(RabbitTemplate rt)
     {
