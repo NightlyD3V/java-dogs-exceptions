@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleagf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Breed</th>
+        </tr>
+
+        <tr th:each="Dog : ${DogList}">
+            <td th:text="${Dog.breed}">Breed</td>
+        </tr>
+    </table>
+</body>
+</html>
